@@ -35,7 +35,7 @@ const projects = [
   },
   {
     name: 'Daily Task Planner',
-    image: 'assets/daily-task-planner.png',
+    image: 'assets/daily-task-planner-screenshot.png',
     githubLink: 'https://github.com/MarkRBishop/daily-task-planner',
     websiteLink: 'https://markrbishop.github.io/daily-task-planner/ ',
   },
