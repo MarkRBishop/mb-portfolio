@@ -4,6 +4,15 @@ const AboutMe = () => {
   return (
     <div className="container mt-4">
       <h2 className="text-center mb-4">About Me</h2>
+      <div className="text-center">
+        <img
+          src="../../../assets/Avatar.webp"
+          alt="Avatar"
+          className="rounded-circle"
+          width="150"
+          height="150"
+        />
+      </div>
       <div className="row">
         <div className="col-md-6 offset-md-3">
           <p className="lead">
