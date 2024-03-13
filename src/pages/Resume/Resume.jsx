@@ -1,4 +1,5 @@
 import React from 'react';
+import MyResumePDF from '../../../assets/MRresume.pdf';
 
 const ResumePage = () => {
   return (
@@ -6,12 +7,10 @@ const ResumePage = () => {
       <div className="row">
         <div className="col-md-6 offset-md-3 resume-container">
           <h2 className="text-center mb-4">My Resume</h2>
-          <p>
-            Here, you can provide information about your skills, experience, and education.
-          </p>
-          <a href="/path/to/your/resume.pdf" download className="btn btn-primary">
-            Download Resume
-          </a>
+          <p className="text-center">Real resume coming soon...</p>
+          <div className="mb-4">
+            <iframe src="../../../assets/MRresume.pdf" title="Resume" width="100%" height="800px"></iframe>
+          </div>
         </div>
       </div>
     </div>

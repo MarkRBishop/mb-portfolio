@@ -6,7 +6,7 @@ const projects = [
   {
     name: 'Atmosphoria',
     image: 'assets/atmosphoria.png',
-    githubLink: 'https://github.com/username/project1',
+    githubLink: 'https://github.com/MarkRBishop/atmosphoria',
     websiteLink: 'https://markrbishop.github.io/atmosphoria/',
   },
   {

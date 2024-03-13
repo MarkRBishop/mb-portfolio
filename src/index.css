@@ -1,7 +1,17 @@
-.navbar-toggler-icon {
-    padding: 3px;
-    border-radius: 3px;
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
+
+.navbar-toggler-icon {
+    border-radius: 3px;
+    background-color: white;
+  }
+
+.navbar-toggler {
+    order: -1
+}
 
 
 header {
@@ -11,10 +21,18 @@ header {
     height: 100px;
 }
 
+header h1 {
+    color: rgb(62, 160, 62) !important;
+  }
+
 .navbar-brand {
     font-size: 2.5rem;
     font-weight: bolder;
     color: rgb(62, 160, 62);
+}
+
+.navbar-nav {
+    margin-left: auto;
 }
 
 nav {
@@ -67,18 +85,6 @@ body {
     object-fit: cover;
 }
   
-.buttons {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    text-align: center;
-    transition: opacity 0.3s ease;
-}
-  
 .project-card:hover .buttons {
     display: block;
 }
@@ -87,14 +93,11 @@ body {
     margin: 5px;
 }
 
-.buttons .project-icon {
-    /* Add styles specifically for the project icons here */
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
+.github-icon {
     position: absolute;
-    top: 5px; /* Adjust the top position */
-    right: 5px; /* Adjust the right position */
-    /* Add any other styles you want for the project icons */
+    top: 10px;
+    left: 5px;
+    background-color: transparent;
   }
 
 footer {

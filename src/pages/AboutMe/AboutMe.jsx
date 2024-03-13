@@ -7,7 +7,13 @@ const AboutMe = () => {
       <div className="row">
         <div className="col-md-6 offset-md-3">
           <p className="lead">
-            This is a placeholder for the About Me content. You can provide a brief description of yourself, your interests, and your background here.
+            My name is Mark Bishop. I've been many things in my life, and now I'm proud to say I'm a programmer as well.
+          </p>
+          <p className="lead">
+            I operated a bar for many years until one day, I decided I'd like to try something new and different. I've always been interested in coding, and when I heard about the program through the University of Texas, I jumped on the opportunity.
+          </p>
+          <p className="lead">
+            While the program is coming to an end, I'm ready to take the next step and continue learning more about this fascinating career.
           </p>
         </div>
       </div>

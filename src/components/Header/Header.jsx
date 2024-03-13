@@ -4,15 +4,14 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg custom-nav">
+      <nav className="navbar navbar-expand-lg navbar-light custom-nav">
         <div className="container">
-        <span className="navbar-brand">Mark Bishop</span>
-          {/* This is a button function that I googled to make the nav bar more intuitive. It collapses at smaller screens */}
+          <h1 className="navbar-brand">Mark Bishop</h1>
           <button
             className="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
