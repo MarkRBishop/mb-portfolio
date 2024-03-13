@@ -1,14 +1,16 @@
 # MB-Portfolio
 
+![Portfolio webpage]()
+
 ## Description 
 
 This application is an expandable platform for me to display different projects that I have done throughout my education and career.
 
 ## Links 
 
-![Portfolio webpage]()
 
-![GitHub Repo](https://github.com/MarkRBishop/mb-portfolio)
+
+https://github.com/MarkRBishop/mb-portfolio
 
 ## Usage 
 
