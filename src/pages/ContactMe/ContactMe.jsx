@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [validationMessage, setValidationMessage] = useState('');
+  const [validationMessages, setValidationMessages] = useState({ name: '', email: '', message: '' });
 
   const isValidEmail = (email) => {
-    // Add your email validation logic here
-    return true; // For simplicity, assume all emails are valid
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
   const handleInputChange = (e) => {
@@ -15,24 +14,31 @@ const ContactMe = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    let message = '';
+
+    if (!value.trim()) {
+      message = `Please enter your ${name}.`;
+    }
+
+    setValidationMessages((prevMessages) => ({ ...prevMessages, [name]: message }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // Dynamic validation checks
-    let message = '';
+    let messages = {
+      name: !formData.name.trim() ? 'Please enter your name.' : '',
+      email: !formData.email.trim() || !isValidEmail(formData.email) ? 'Please enter a valid email address.' : '',
+      message: !formData.message.trim() ? 'Please enter a message.' : '',
+    };
 
-    if (!formData.name.trim()) {
-      message = 'Please enter your name.';
-    } else if (!formData.email.trim() || !isValidEmail(formData.email)) {
-      message = 'Please enter a valid email address.';
-    } else if (!formData.message.trim()) {
-      message = 'Please enter a message.';
-    }
-
-    setValidationMessage(message);
+    setValidationMessages(messages);
 
     // Check for required fields before submission
-    if (message) {
+    if (Object.values(messages).some((message) => message !== '')) {
       return;
     }
 
@@ -40,7 +46,7 @@ const ContactMe = () => {
     // ...
 
     // Display thank you message
-    setValidationMessage('Thank you for your message.');
+    setValidationMessages({ name: '', email: '', message: 'Thank you for your message.' });
 
     // Clear form data after submission
     setFormData({ name: '', email: '', message: '' });
@@ -55,28 +61,54 @@ const ContactMe = () => {
             <label htmlFor="name" className="form-label">
               Name:
             </label>
-            <input type="text" className="form-control" id="name" name="name" value={formData.name} onChange={handleInputChange} />
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+            />
+            <div className="text-danger">{validationMessages.name}</div>
           </div>
 
           <div className="mb-3">
             <label htmlFor="email" className="form-label">
               Email:
             </label>
-            <input type="email" className="form-control" id="email" name="email" value={formData.email} onChange={handleInputChange} />
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+            />
+            <div className="text-danger">{validationMessages.email}</div>
           </div>
 
           <div className="mb-3">
             <label htmlFor="message" className="form-label">
               Message:
             </label>
-            <textarea className="form-control" id="message" name="message" rows="6" value={formData.message} onChange={handleInputChange}></textarea>
+            <textarea
+              className="form-control"
+              id="message"
+              name="message"
+              rows="6"
+              value={formData.message}
+              onChange={handleInputChange}
+              onBlur={handleBlur}
+            ></textarea>
           </div>
 
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
 
-          <div className="text-danger mt-3">{validationMessage}</div>
+          <div className="text-danger mt-3">{validationMessages.message}</div>
         </form>
       </div>
     </div>
