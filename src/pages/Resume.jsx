@@ -1,5 +1,5 @@
 import React from 'react';
-import MyResumePDF from '../../../assets/MRresume.pdf';
+import MyResumePDF from '../../../public/MRresume.pdf';
 
 const ResumePage = () => {
   return (
