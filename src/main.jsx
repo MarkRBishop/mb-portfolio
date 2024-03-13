@@ -5,10 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 import App from './App';
-import AboutMePage from './pages/AboutMe/AboutMe';
-import PortfolioPage from './pages/Portfolio/Portfolio';
-import ContactMePage from './pages/ContactMe/ContactMe';
-import ResumePage from './pages/Resume/Resume';
+import AboutMePage from './pages/AboutMe';
+import PortfolioPage from './pages/Portfolio';
+import ContactMePage from './pages/ContactMe';
+import ResumePage from './pages/Resume';
 
 // Define the accessible routes
 const router = createBrowserRouter([
