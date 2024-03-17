@@ -8,9 +8,9 @@ import './App.css'
 
 const App = () => {
   return (
-    <div style={{ backgroundImage: `url(${backgroundImage})`, minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+    <div>
       <Header />
-      <main>
+      <main style={{ backgroundImage: `url(${backgroundImage})`, minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>>
         <Outlet />
       </main>
       <Footer />
