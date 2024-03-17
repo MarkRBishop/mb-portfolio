@@ -15,7 +15,7 @@
 
 
 header {
-    background-image: url('../assets/dark-geometric-background-with-copy-space_24972-1816.jpg');
+    background-image: url('dark-geometric-background-with-copy-space_24972-1816.jpg');
     background-size: cover;
     padding: 20px;
     height: 100px;
@@ -56,7 +56,7 @@ nav a:hover {
 }
 
 body {
-    background-image: url('../assets/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-87847.avif'); 
+    background-image: url('abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-87847.avif'); 
     background-size: cover; 
     background-repeat: no-repeat;
     color: rgb(62, 160, 62);
