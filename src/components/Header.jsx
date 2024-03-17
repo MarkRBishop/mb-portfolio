@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import backgroundImage from '../assets/dark-geometric-background-with-copy-space_24972-1816.jpg'
 
 const Header = () => {
   return (
-    <header>
+    <header style={{ backgroundImage: `url(${backgroundImage})`}}>
       <nav className="navbar navbar-expand-lg navbar-light custom-nav">
         <div className="container">
           <h1 className="navbar-brand">Mark Bishop</h1>
