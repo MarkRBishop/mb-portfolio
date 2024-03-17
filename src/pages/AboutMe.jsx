@@ -6,7 +6,7 @@ const AboutMe = () => {
       <h2 className="text-center mb-4">About Me</h2>
       <div className="text-center">
         <img
-          src="Avatar.png"
+          src="\src\assets\Avatar.png"
           alt="Avatar"
           className="rounded-circle"
           width="150"
