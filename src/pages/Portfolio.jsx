@@ -5,37 +5,37 @@ import { Outlet } from 'react-router-dom';
 const projects = [
   {
     name: 'Atmosphoria',
-    image: 'public/atmosphoria.png',
+    image: 'atmosphoria.png',
     githubLink: 'https://github.com/MarkRBishop/atmosphoria',
     websiteLink: 'https://markrbishop.github.io/atmosphoria/',
   },
   {
     name: 'Rate my Manager',
-    image: 'public/rate-my-manager.png',
+    image: 'rate-my-manager.png',
     githubLink: 'https://github.com/MarkRBishop/rate-my-manager',
     websiteLink: 'https://rate-my-manager-97f9044f8b00.herokuapp.com/',
   },
   {
     name: 'devTalk',
-    image: 'public/devTalk_homepage.png',
+    image: 'devTalk_homepage.png',
     githubLink: 'https://github.com/MarkRBishop/devTalk-blog',
     websiteLink: 'https://devtalk-blog-9a1c063b54af.herokuapp.com/',
   },
   {
     name: 'weatherDash',
-    image: 'public/weatherDash.png',
+    image: 'weatherDash.png',
     githubLink: 'https://github.com/MarkRBishop',
     websiteLink: 'https://markrbishop.github.io/weatherDash/',
   },
   {
     name: 'ezStaffing',
-    image: 'public/ss-of-ez-staffing.png',
+    image: 'ss-of-ez-staffing.png',
     githubLink: 'https://github.com/username/project1',
     websiteLink: 'https://drive.google.com/file/d/1xeW7bP0uqCQbEXF9MbNMJJReiwGt7egj/view',
   },
   {
     name: 'Daily Task Planner',
-    image: 'public/daily-task-planner-screenshot.png',
+    image: 'daily-task-planner-screenshot.png',
     githubLink: 'https://github.com/MarkRBishop/daily-task-planner',
     websiteLink: 'https://markrbishop.github.io/daily-task-planner/ ',
   },

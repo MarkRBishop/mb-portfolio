@@ -1,5 +1,5 @@
 import React from 'react';
-import MyResumePDF from '../../public/MRresume.pdf';
+import MyResumePDF from '../assets/MRresume.pdf';
 
 const ResumePage = () => {
   return (
@@ -9,7 +9,7 @@ const ResumePage = () => {
           <h2 className="text-center mb-4">My Resume</h2>
           <p className="text-center">Real resume coming soon...</p>
           <div className="mb-4">
-            <iframe src="../../../public/MRresume.pdf" title="Resume" width="100%" height="800px"></iframe>
+            <iframe src="MRresume.pdf" title="Resume" width="100%" height="800px"></iframe>
           </div>
         </div>
       </div>
